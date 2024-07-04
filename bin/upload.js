@@ -1,0 +1,12 @@
+const { createCommand } = require('commander')
+
+module.exports = createCommand('upload')
+  .description('Deploy a firmware update')
+  .argument('<file>', 'target')
+  .option('-b, --board <fqbn>', 'board name')
+  .option('-o, --out <dir>', 'output build')
+  .option('--server [url]', 'custom backend')
+  .option('--firmware-id <id>', 'firmware id')
+  .option('--firmware-key <key>', 'firmware key')
+  .option('--secret [token]', 'access token')
+  .action(require('../lib/upload.js'))

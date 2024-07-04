@@ -1,0 +1,39 @@
+{
+  "name": "ota-update",
+  "version": "0.0.0",
+  "description": "Upload firmware OTA updates to IoT devices",
+  "main": "index.js",
+  "bin": {
+    "ota-update": "bin.js"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukks/ota-update.git"
+  },
+  "author": "Lucas Barrena (LuKks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukks/ota-update/issues"
+  },
+  "homepage": "https://github.com/lukks/ota-update#readme",
+  "devDependencies": {
+    "brittle": "^3.5.2",
+    "like-tmp": "^1.0.0",
+    "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "arduino-cli-runtime": "^1.1.1",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0",
+    "like-fetch": "^2.1.0",
+    "safety-catch": "^1.0.2"
+  }
+}

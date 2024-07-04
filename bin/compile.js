@@ -1,0 +1,11 @@
+const { createCommand } = require('commander')
+
+module.exports = createCommand('compile')
+  .description('Compile a firmware')
+  .argument('<file>', 'target')
+  .option('-b, --board [fqbn]', 'board name')
+  .option('--build [dir]', 'output build')
+  .option('-o, --out [dir]', 'output binary')
+  .option('--no-out', 'do not copy binary from build dir')
+  .option('-v, --verbose', 'print more information', false)
+  .action(require('../lib/compile.js'))
