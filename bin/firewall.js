@@ -4,7 +4,7 @@ const firewall = createCommand('firewall')
   .description('Allow or deny devices')
 
 firewall
-  .command('allow <device id>')
+  .command('allow <device-id>')
   .description('Allow a device')
   .option('--server [url]', 'custom backend')
   .option('--firmware-id <id>', 'firmware id')
@@ -13,7 +13,7 @@ firewall
   .action(require('../lib/firewall-allow.js'))
 
 firewall
-  .command('deny <device id>')
+  .command('deny <device-id>')
   .description('Deny a device')
   .option('--server [url]', 'custom backend')
   .option('--firmware-id <id>', 'firmware id')
