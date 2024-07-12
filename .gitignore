@@ -1,6 +1,4 @@
 node_modules/
-test/
-build/
 package-lock.json
+coverage/
 .env
-.eslintrc.*
