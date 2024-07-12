@@ -1,6 +1,6 @@
 {
   "name": "ota-update",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Upload firmware OTA updates to IoT devices",
   "main": "index.js",
   "bin": {
